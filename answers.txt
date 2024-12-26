@@ -1,0 +1,22 @@
+    Explain why a number data type added to a string data type returns a string.
+** When a number is added to a string, 
+JavaScript performs type coercion and converts the number to a string before performing the concatenation. 
+This happens because JavaScript tries to make sense of the operation by converting operands to compatible types, 
+resulting in a string concatenation rather than arithmetic addition.**
+
+    Name a scenario where using the == operator could cause a bug.
+**Using the `==` operator can cause bugs when comparing values of different types due to its type coercion behavior.
+let value = "5"; if (value == 5) { // This condition will be true, even though value is a string, // because == performs type coercion and converts "5" to 5. }**
+
+    Name the operator(s) that you find confusing and explain why.
+    ** I find the Modulus operator most confusing as it deals with the remainder of division and can generate complcated answers.**
+
+
+    Explain a situation where you would use the Modulus operator and why.
+   ** Cycling through values is one way to use the Modulus example below
+
+    let index = 0;
+    let array = [1, 2, 3, 4, 5];
+    index = (index + 1) % array.length;
+// Ensures that the index wraps around when it reaches the end of the array.**
+
